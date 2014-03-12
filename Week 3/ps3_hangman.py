@@ -115,7 +115,7 @@ def hangman(secretWord):
     print("-----------")
     lettersGuessed = []
     guesses = 8
-    # while all the letters of secretWord are not yet in lettersGuessed
+    # while all the letters of secretWord are not yet in lettersGuessed and guesses left is more than 0
     while not isWordGuessed(secretWord, lettersGuessed) and guesses > 0:
         # print first line
         print("You have " + str(guesses) +" guesses left")
